@@ -31,6 +31,35 @@ MANIFEST
 #   before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+# Project-specific restricted data
+data/*
+!data/README.md
+*.tif
+*.TIF
+*.tiff
+*.TIFF
+*.jp2
+*.JP2
+*.gpkg
+*.geojson
+
+# Model checkpoints and training runs
+*.pth
+runs*/
+H2_runs/
+*_work/
+
+# Generated files
+candidate_predictions/
+cache/
+crops/
+tiles/
+stacks/
+outputs/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
 
 # Installer logs
 pip-log.txt
